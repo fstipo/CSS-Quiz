@@ -35,7 +35,7 @@ header h1 {
 }
 
 section {
-    background-color: #385C73;
+    background-color: #322e68;
     padding: 50px;
     display: flow-root;
     margin-bottom: 40px;
@@ -67,7 +67,7 @@ button {
     margin-top: 30px;
     padding: 14px 28px;
     border-radius: 8px;
-    color: #385C73;
+    color: #322e68;
     text-transform: uppercase;
     font-weight: 900;
     font-size: 1.2rem;
@@ -76,4 +76,5 @@ button {
 button:hover {
     background-color: #322e68;
     color: #FFFDFA;
+    border: 2px solid #FFFDFA;
 }
