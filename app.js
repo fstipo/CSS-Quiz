@@ -3,7 +3,7 @@
 const correctAnswers = ['B', 'B', 'A', 'B', 'A', 'A', 'A', 'A', 'A', 'B'];
 const form = document.querySelector('form');
 const result = document.querySelector('.result');
-console.log(result);
+
 form.addEventListener('submit', e => {
     e.preventDefault();
     let score = 0;
@@ -14,7 +14,16 @@ form.addEventListener('submit', e => {
             score += 10;
         };
     })
-    result.innerHTML = `<p>Your score is <span>${score}%</span></p>`;
+
+    scrollTo(0, 0);
+
     result.style.display = 'block';
-    console.log(score);
+    result.innerHTML = `<p>Your score is <span>${score}%</span></p>`;
+
+    let output = 0;
+    const timer = setInterval(() => {
+        result.innerHTML = `<p>Your score is <span>${output}%</span></p>`;
+        output === score ? clearInterval() : output++;
+
+    }, 10);
 })

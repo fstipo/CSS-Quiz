@@ -36,7 +36,6 @@ header h1 {
 
 .result {
     display: none;
-    color: #322e68;
 }
 
 .result p {
@@ -48,11 +47,19 @@ header h1 {
     color: #777;
 }
 
-.result p span {
-    color: #322e68;
+span {
     font-size: 4rem;
-
+    color: #322e68;
 }
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
 
 section {
     background-color: #322e68;
