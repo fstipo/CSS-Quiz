@@ -1,9 +1,9 @@
 'use strict';
 
 const correctAnswers = ['B', 'B', 'A', 'B', 'A', 'A', 'A', 'A', 'A', 'B'];
-
 const form = document.querySelector('form');
-console.log(form);
+const result = document.querySelector('.result');
+console.log(result);
 form.addEventListener('submit', e => {
     e.preventDefault();
     let score = 0;
@@ -14,5 +14,7 @@ form.addEventListener('submit', e => {
             score += 10;
         };
     })
+    result.innerHTML = `<p>Your score is <span>${score}%</span></p>`;
+    result.style.display = 'block';
     console.log(score);
 })
